@@ -62,8 +62,10 @@ notificador_logistica.py listens to that queue and simulates a logistics task.
 📦 Notifying logistics: {'product': 'Laptop', 'quantity': 2}
 
 ```
-🧑‍💻 Author
-Justin Gomezcoello
-Software Engineering Student – UDLA
-GitHub: @JustinGomezcoello
+## 🧑‍💻 Author
+
+**Justin Gómez Coello**  
+Software Engineering Student at **Universidad de Las Américas (UDLA)** – Quito, Ecuador  
+GitHub: [@JustinGomezcoello](https://github.com/JustinGomezcoello)
+
 
