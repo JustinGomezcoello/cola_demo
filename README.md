@@ -1,58 +1,72 @@
-📦 cola_rabbitmq
-This is a simple architecture demo project using RabbitMQ and Python to simulate order processing and logistics notifications.
+# 📦 cola_rabbitmq
 
-🧠 Purpose
-The goal of this project is to demonstrate how to use a queue-based messaging system to decouple the components of an application, using RabbitMQ as the message broker and pika as the Python client.
+This is a simple architecture demo project using **RabbitMQ** and **Python** to simulate order processing and logistics notifications.
 
-🏗️ Project Structure
+---
+
+## 🧠 Purpose
+
+The goal of this project is to demonstrate how to use a queue-based messaging system to decouple the components of an application, using **RabbitMQ** as the message broker and **pika** as the Python client.
+
+---
+
+## 🏗️ Project Structure
 
 cola_rabbitmq/
 │
-├── productor_pedidos.py         # Publishes new orders to the queue
-├── procesador_pedidos.py        # Consumes orders and simulates processing
-├── notificador_logistica.py     # Listens to notifications and simulates logistics actions
-└── README.md                    # Project documentation
-🚀 Requirements
-Python 3.x
+├── productor_pedidos.py # Publishes new orders to the queue
+├── procesador_pedidos.py # Consumes orders and simulates processing
+├── notificador_logistica.py # Listens to notifications and simulates logistics actions
+└── README.md # Project documentation
 
-RabbitMQ installed and running on localhost
 
-pika library installed:
+
+---
+
+## 🚀 Requirements
+
+- Python 3.x
+- RabbitMQ installed and running on `localhost`
+- `pika` library installed:
+
+```
 pip install pika
-
 ⚙️ How to Run
 Make sure RabbitMQ is running locally on port 5672.
 
 Start the order processor:
+
+
 python procesador_pedidos.py
-
 Start the logistics notifier:
+
+bash
+Copy
+Edit
 python notificador_logistica.py
-
-
 Publish a new order:
+
+bash
+Copy
+Edit
 python productor_pedidos.py
-
-
 📬 Message Flow
 productor_pedidos.py sends a message to the pedido_nuevo queue.
 
-procesador_pedidos.py receives and processes the message.
+procesador_pedidos.py receives and processes the order.
 
-It then publishes a notification to the notificaciones_logistica queue.
+Then it sends a notification to the notificaciones_logistica queue.
 
-notificador_logistica.py listens to this queue and simulates a logistics process.
-
+notificador_logistica.py listens to that queue and simulates a logistics task.
 
 📸 Example Output
-
+bash
+Copy
+Edit
 ✅ Processing order: {'product': 'Laptop', 'quantity': 2, 'customer': 'Juan'}
 📦 Notifying logistics: {'product': 'Laptop', 'quantity': 2}
-
 🧑‍💻 Author
 Justin Gomezcoello
 Software Engineering Student – UDLA
-
-
-
+GitHub: @JustinGomezcoello
 
