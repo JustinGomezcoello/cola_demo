@@ -40,15 +40,11 @@ Start the order processor:
 python procesador_pedidos.py
 Start the logistics notifier:
 
-bash
-Copy
-Edit
+
 python notificador_logistica.py
 Publish a new order:
 
-bash
-Copy
-Edit
+
 python productor_pedidos.py
 📬 Message Flow
 productor_pedidos.py sends a message to the pedido_nuevo queue.
@@ -60,11 +56,12 @@ Then it sends a notification to the notificaciones_logistica queue.
 notificador_logistica.py listens to that queue and simulates a logistics task.
 
 📸 Example Output
-bash
-Copy
-Edit
+
+
 ✅ Processing order: {'product': 'Laptop', 'quantity': 2, 'customer': 'Juan'}
 📦 Notifying logistics: {'product': 'Laptop', 'quantity': 2}
+
+```
 🧑‍💻 Author
 Justin Gomezcoello
 Software Engineering Student – UDLA
