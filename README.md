@@ -71,7 +71,7 @@ notificador_logistica.py listens to that queue and simulates a logistics task.
 ```
 ## 🧑‍💻 Author
 
-**Justin Gómez Coello**  
+**Justin Gomezcoello**  
 Software Engineering Student at **Universidad de Las Américas (UDLA)** – Quito, Ecuador  
 GitHub: [@JustinGomezcoello](https://github.com/JustinGomezcoello)
 
