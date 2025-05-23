@@ -11,18 +11,25 @@ The goal of this project is to demonstrate how to use a queue-based messaging sy
 ---
 
 ## 🏗️ Project Structure
-
+```
 cola_rabbitmq/
 │
 ├── productor_pedidos.py # Publishes new orders to the queue
 ├── procesador_pedidos.py # Consumes orders and simulates processing
 ├── notificador_logistica.py # Listens to notifications and simulates logistics actions
 └── README.md # Project documentation
-
+```
 
 
 ---
+## 🐳 Docker - RabbitMQ Setup
 
+If you don't have RabbitMQ installed, you can run it quickly with Docker:
+
+```bash
+docker run -d --hostname rabbitmq-host --name hospital-rabbitmq -p 5672:5672 -p 15672:15672 -e RABBITMQ_DEFAULT_USER=guest -e RABBITMQ_DEFAULT_PASS=guest rabbitmq:3-management
+```
+---
 ## 🚀 Requirements
 
 - Python 3.x
